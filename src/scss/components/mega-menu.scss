@@ -1,0 +1,104 @@
+    /* General Mega Menu Styles */
+    
+    .mega-menu {
+        display: none;
+        background-color: #fff;
+        box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+        font-family: Arial, sans-serif;
+        height: 50vh;
+        &__inner {
+            display: flex;
+        }
+        &__column__categories {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            display: flex;
+            .mega-menu__link {
+                line-height: 32px;
+                display: flex;
+                align-items: center;
+                /* Centers the content vertically */
+                justify-content: flex-start;
+                /* Aligns content to the start (left) */
+                line-height: 32px;
+                text-decoration: none;
+                color: #333;
+                position: relative;
+                width: 100%;
+                &:hover {
+                    color: $accent-hover-color;
+                }
+                &.mega-menu__content {
+                    display: flex;
+                    /* Aligns the icon and text in a row */
+                    align-items: center;
+                    /* Vertically centers the icon and text */
+                    justify-content: flex-start;
+                }
+                .mega-menu__icon {
+                    margin-right: 8px;
+                    /* Space between icon and text */
+                }
+                .mega-menu__arrow {
+                    margin-left: auto;
+                    /* Push the arrow to the right if present */
+                }
+            }
+        }
+        &__column {
+            padding: 10px;
+            &__hidden {
+                flex-direction: column;
+            }
+            &-title {
+                font-size: 16px;
+                font-weight: bold;
+                margin-bottom: 10px;
+            }
+            &-list {
+                list-style: none;
+                padding: 0;
+                margin: 0;
+                li {
+                    margin-bottom: 8px;
+                }
+                a {
+                    color: #333;
+                    text-decoration: none;
+                    &:hover {
+                        text-decoration: underline;
+                    }
+                }
+            }
+        }
+        &__hidden {
+            left: 350px;
+            display: flex;
+            flex-direction: row;
+            width: calc(100% - 350px);
+            padding: 20px;
+            transition: display 0.3s ease;
+            .mega-menu__column {
+                flex: 1;
+                padding: 10px;
+            }
+        }
+    }
+    
+    .hover-block {
+        display: none;
+        opacity: 0;
+        transition: opacity 0.3s ease;
+    }
+    
+    .hover-block.isVisible {
+        display: flex;
+        opacity: 1;
+    }
+    
+    .mega-menu__column__categories {
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+    }

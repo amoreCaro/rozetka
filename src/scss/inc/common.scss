@@ -1,0 +1,34 @@
+@use "vars";
+// @import "media";
+body {
+    font-size: 16px;
+    font-family: "Roboto", sans-serif;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.wrapper {
+    width: 100%;
+    margin: 0 auto;
+}
+
+.layout {
+    // max-width: 1440px;
+    display: flex;
+    align-items: center;
+    width: 100%;
+    justify-content: space-between;
+    margin-left: 24px;
+}
+
+.material-symbols-outlined {
+    font-size: 24px;
+}
+
+.container {
+    width: 1440px;
+}
