@@ -1,46 +1,33 @@
 .swiper__container {
+    width: 100%;
+    height: 100%;
+    background-color: orange;
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-.swiper {
-    overflow: hidden;
-    background-color: orange;
-    width: 80%;
-    &__wrapper {
-        display: flex;
-        transition: transform 0.5s ease;
-    }
-    &img {
-        width: 100%;
-        height: auto;
-        object-fit: cover;
-    }
+.swiper__inner {
+    // padding: 4rem;
 }
 
-.pagination {
-    position: absolute;
-    top: 25%;
-    width: 100%;
+.swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    background: #fff;
     display: flex;
-    justify-content: space-between;
-    transform: translateY(-50%);
-    .swiper__button {
-        background-color: rgba(0, 0, 0, 0.5);
-        color: #fff;
-        padding: 10px;
-        border-radius: 50%;
-        cursor: pointer;
-        transition: background-color 0.3s;
-        &:hover {
-            background-color: rgba(0, 0, 0, 0.8);
-        }
-        &--prev {
-            left: 10px;
-        }
-        &--next {
-            right: 10px;
-        }
-    }
+    justify-content: center;
+    align-items: center;
+}
+
+.swiper-slide img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.swiper-button {
+    color: $dark-bg;
+    cursor: pointer;
 }

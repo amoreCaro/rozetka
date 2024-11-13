@@ -36,5 +36,9 @@ img:hover {
 
 .container {
     width: 100%;
+    height: 100vh;
     border: 1px solid darkred;
+    display: flex;
+    justify-content: center;
+    align-items: center
 }
