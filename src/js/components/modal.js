@@ -3,22 +3,23 @@ function modal(modalId, openBtnId, closeBtnId) {
     const openModalBtn = document.getElementById(openBtnId);
     const closeModalBtn = document.getElementById(closeBtnId);
 
-    openModalBtn.onclick = () => {
-        modal.style.display = "block";
-    };
+    if (openModalBtn) {
+        openModalBtn.onclick = () => {
+            if (modal) modal.style.display = "block";
+        };
+    }
 
-    closeModalBtn.onclick = () => {
-        modal.style.display = "none";
-    };
+    if (closeModalBtn) {
+        closeModalBtn.onclick = () => {
+            if (modal) modal.style.display = "none";
+        };
+    }
 
     window.onclick = (event) => {
-        if (event.target === sidebar) {
+        if (event.target === modal) {
             modal.style.display = "none";
         }
     };
 }
-
-// Initialize the sidebar with specific IDs
-modal("modal", "openModalBtn", "closeModalBtn");
 
 export default modal;

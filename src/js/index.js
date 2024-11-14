@@ -1,16 +1,15 @@
 import modal from "./components/modal";
-import sidebar from "./components/sidebar";
-import setupMegaMenu from "./components/setupMegaMenu";
-import swiper from './components/swiper';
-import toggleMenuVisibility from "./components/toggleMenuVisibility";
-import phoneInput from "./components/phoneInput";
+// import sidebar from "./components/sidebar";
+// import setupMegaMenu from "./components/setupMegaMenu";
+import hero from './components/hero';
+// import toggleMenuVisibility from "./components/toggleMenuVisibility";
+// import phoneInput from "./components/phoneInput";
 
 document.addEventListener("DOMContentLoaded", function() {
     modal();
-    sidebar();
-    setupMegaMenu();
-    swiper();
-    toggleMenuVisibility();
-    phoneInput();
-
+    // sidebar();
+    // setupMegaMenu();
+    hero();
+    // toggleMenuVisibility();
+    // phoneInput();
 });
