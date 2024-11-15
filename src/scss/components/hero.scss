@@ -1,35 +1,46 @@
 .hero {
     padding: 0px 32px; // Horizontal padding for centering
+} 
 
-    &__button-group {
-        display: flex;
-        justify-content: space-between;
+
+.hero__button-group {
+    display: flex;
+    justify-content: space-between;
+    position: absolute;
+    top: 50%;
+    left: 0;
+    right: 0;
+    transform: translateY(-50%);
+  }
+  
+  .hero__btn {
+    background-color: $white-bg;
+    width: 40px;
+    height: 40px;
+    border: none;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    z-index: 1000;
+  
+    svg {
+      fill: $icon-color;
+      width: 24px;
+      height: 24px;
+    }
+    &-prev {
         position: absolute;
-        top: 50%;
-        width: 100%;
-        transform: translateY(-50%); // Center vertically
+        left: 40px; // Positioned on the left side with margin
     }
 
-    &__btn {
-        width: 40px;
-        height: 40px;
-        background-color: $white-bg !important;
-        border: none;
-        border-radius: 50%;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        cursor: pointer;
-
-        &-prev {
-            margin-left: 20px;
-        }
-
-        &-next {
-            margin-right: 20px; 
-        }
+    &-next {
+        position: absolute;
+        right: 40px; // Positioned on the right side with margin
     }
-}
+  }
+  
 
 .swiper {
     padding: 16px 0px 0px 40px;
