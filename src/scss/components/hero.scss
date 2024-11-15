@@ -16,6 +16,13 @@
         font-size: 20px; 
     }
 }
+.swiper-button-prev:after, .swiper-rtl .swiper-button-prev:after {
+    content: '';
+}
+
+.swiper-button-next:after, .swiper-rtl .swiper-button-prev:after {
+    content: '';
+}
 
 .swiper {
     width: 100%;
