@@ -1,49 +1,9 @@
 .hero {
-    padding: 0px 32px; // Horizontal padding for centering
+    padding: 0px 32px; 
+    z-index: -1;
 } 
 
-
-.hero__button-group {
-    display: flex;
-    justify-content: space-between;
-    position: absolute;
-    top: 50%;
-    left: 0;
-    right: 0;
-    transform: translateY(-50%);
-  }
-  
-  .hero__btn {
-    background-color: $white-bg;
-    width: 40px;
-    height: 40px;
-    border: none;
-    border-radius: 50%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    cursor: pointer;
-    z-index: 1000;
-  
-    svg {
-      fill: $icon-color;
-      width: 24px;
-      height: 24px;
-    }
-    &-prev {
-        position: absolute;
-        left: 40px; // Positioned on the left side with margin
-    }
-
-    &-next {
-        position: absolute;
-        right: 40px; // Positioned on the right side with margin
-    }
-  }
-  
-
 .swiper {
-    // padding: 16px 0px 0px 40px;
     width: 100%;
     height: 100%;
 
