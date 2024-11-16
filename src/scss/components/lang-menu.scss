@@ -1,9 +1,10 @@
 .lang-menu-container {
-    width: 120px;
     display: none;  
-    transition: opacity 0.3s ease, visibility 0.3s ease;
     position: relative;
+    width: 120px;
     right: 120px;
+    transition: opacity 0.3s ease, visibility 0.3s ease;
+    z-index: 1;
 
     &.active {
         display: flex;  

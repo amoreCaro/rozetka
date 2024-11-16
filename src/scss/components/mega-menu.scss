@@ -27,6 +27,9 @@
             &:hover {
                 color: $accent-hover-color;
             }
+            &:focus {
+                color: $accent-hover-color;
+            }
             &.mega-menu__content {
                 display: flex;
                 align-items: center;
@@ -34,20 +37,16 @@
             }
             .mega-menu__icon {
                 margin-right: 8px;
-                /* Space between icon and text */
             }
             .mega-menu__arrow {
                 margin-left: auto;
-                /* Push the arrow to the right if present */
             }
         }
     }
     &__column {
         padding: 10px;
         &__hidden {
-            /* Center items vertically */
             gap: 10px;
-            /* Optional: space between items */
         }
         &-title {
             font-size: 16px;
@@ -62,10 +61,13 @@
                 margin-bottom: 8px;
             }
             a {
-                color: #333;
+                font-size: 13px;
+                line-height: 15px;
+                color: #4b4b4b;
                 text-decoration: none;
                 &:hover {
                     text-decoration: underline;
+                    color: $accent-color;
                 }
             }
         }
@@ -81,28 +83,28 @@
 }
 
 .hover-block {
-    /* Make the width stretch across the remaining space */
-    // box-sizing: border-box;
+
     display: none;
 }
 
 .mega-menu__hidden {
-    color: red;
+    color: $icon-color;
+    font-size: 16px;
+    line-height: 18px;
+    &:hover {
+        color: $accent-color;
+    }
 }
 
 
-/* Display the hover block when hovering over .mega-menu__link */
 
 .trigger:hover+.hover-block {
     display: flex;
-    /* Use flexbox for layout */
     flex-direction: row;
-    /* Align content in a row */
     align-items: center;
-    /* Vertically center content */
     position: absolute;
     right: calc(100% - 1400px);
     padding: 10px;
     top: 80px;
-    width: calc(100% - 350px);
+    width: calc(100% - 300px);
 }
