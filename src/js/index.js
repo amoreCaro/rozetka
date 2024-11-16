@@ -4,6 +4,7 @@
 // import setupMegaMenu from "./components/setupMegaMenu";
 // import toggleMenuVisibility from "./components/toggleMenuVisibility";
 // import phoneInput from "./components/phoneInput";
+import phoneInput from "./components/langMenu";
 
 document.addEventListener("DOMContentLoaded", function() {
     // hero();
@@ -12,4 +13,5 @@ document.addEventListener("DOMContentLoaded", function() {
     // setupMegaMenu();
     // toggleMenuVisibility();
     // phoneInput();
+    langMenu();
 });
