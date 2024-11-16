@@ -2,12 +2,28 @@
     <div class="sidebar ">
         <div class="sidebar__header ">
             <a class="header__logo  " href="# ">
-                <img class="header__logo-img sidebar-logo" src="../../img/rozetka__logo.svg " alt="Logo " />
+                <img class=" sidebar-logo" src="../../img/rozetka__logo.svg " alt="Logo " />
             </a>
-            <div class="header-actions__item header-actions__item-language sidebar-actions__item ">
-                <div class="header__button btn h-btn-dropdown ">
+            <div class="header-actions__item header-actions__item-language ">
+                <div class="header__button btn h-btn-dropdown open-lang-menu-btn">
                     UA
-                    <span class="material-symbols-outlined ">keyboard_arrow_down</span>
+                    <span class="material-symbols-outlined">keyboard_arrow_down</span>
+                </div>
+                <div class="lang-menu-container">
+                    <ul class="lang-menu">
+                        <li>
+                            <button class="lang-menu__item h-btn--medium active" data-lang="UA">
+                                <span class="lang-menu__text">UA</span>
+                                <span class="lang-menu__icon material-symbols-outlined">check</span> 
+                            </button>
+                        </li>
+                        <li>
+                            <button class="lang-menu__item h-btn--medium" data-lang="EN">
+                                <span class="lang-menu__text">EN</span>
+                                <span class="lang-menu__icon material-symbols-outlined">check</span>
+                            </button>
+                        </li>
+                    </ul>
                 </div>
             </div>
             <button id="closeSidebarBtn" class="btn h--sidebar-close-icon">
