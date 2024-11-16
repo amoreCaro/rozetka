@@ -18,12 +18,11 @@
         align-items: center;
         width: 100%;
         justify-content: space-between;
-        margin-left: 24px;
         .header__menu {
-            margin-right: 16px;
+            margin-right: 8px;
         }
         .header__logo {
-            margin-right: 35px;
+            margin-right: 8px;
             &-img {
                 max-height: 80px;
             }
@@ -54,6 +53,7 @@
             flex-grow: 1;
             margin-right: 20px;
             border-radius: 5px;
+            line-height: 40px;
         }
         .header__search-icon-container {
             display: flex;
@@ -64,7 +64,7 @@
             border: none;
             outline: none;
             flex: 1;
-            padding: 5px;
+            padding: 12px;
             background-color: transparent;
             color: $placeholder-color;
         }
@@ -125,7 +125,7 @@
         margin-right: 0px;
     }
     .header-search {
-        margin: 0px;
+    
     }
     .header__search-container {
         margin-right: 0px;
