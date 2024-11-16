@@ -8,8 +8,8 @@
     position: fixed;
     top: 0;
     left: 0;
-    z-index: 1000;
-    overflow: auto;
+    z-index: 10;
+    overflow: visible !important;
     background: $text-color;
 
     &__inner {
