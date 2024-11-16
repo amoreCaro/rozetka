@@ -19,8 +19,8 @@
         width: 100%;
         justify-content: space-between;
         margin-left: 24px;
-        &__menu {
-            margin-right: 20px;
+        .header__menu {
+            margin-right: 16px;
         }
         .header__logo {
             margin-right: 35px;
@@ -78,14 +78,15 @@
         .search-form__submit {
             border-radius: 0 3px 3px 0;
         }
+        .header-actions {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+        }
     }
 }
 
-.header-actions {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-}
+
 
 
 /* Header adjustments */
@@ -98,18 +99,16 @@
 }
 
 @media (max-width: 1024px) {
-    .header__button--catalog,
+    #openMegaMenu,
     .header-actions__item-language {
         display: none;
-        /* Hide buttons */
     }
 }
 
 @media (max-width: 768px) {
     .header__search-button,
-    .btn-icon--account {
+    #openModalBtn  {
         display: none;
-        /* Hide buttons */
     }
     .header {
         padding: 0 5px;
@@ -134,3 +133,4 @@
         margin-right: 10px;
     }
 }
+
