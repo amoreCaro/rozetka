@@ -2,6 +2,8 @@
     width: 120px;
     display: none;  
     transition: opacity 0.3s ease, visibility 0.3s ease;
+    position: relative;
+    right: 120px;
 
     &.active {
         display: flex;  
