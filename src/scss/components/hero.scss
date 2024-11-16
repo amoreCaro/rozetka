@@ -1,27 +1,22 @@
 .hero {
-    padding: 0px 32px; 
+    padding: 0 32px;
     z-index: 0;
-}
 
-.hero__btn {
-    background-color: $white-bg;
-    border: none;
-    color: $icon-color;
-    width: 40px; 
-    height: 40px;
-    border-radius: 50%;
-    svg, i { 
-        width: 20px; 
-        height: 20px;
-        font-size: 20px; 
+    &__btn {
+        background-color: $white-bg;
+        border: none;
+        color: $icon-color;
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
+
+        svg,
+        i {
+            width: 20px;
+            height: 20px;
+            font-size: 20px;
+        }
     }
-}
-.swiper-button-prev:after, .swiper-rtl .swiper-button-prev:after {
-    content: '';
-}
-
-.swiper-button-next:after, .swiper-rtl .swiper-button-prev:after {
-    content: '';
 }
 
 .swiper {
@@ -29,23 +24,32 @@
     height: 100%;
 
     &-slide {
-        text-align: center;
-        font-size: 18px;
-        background: #fff;
         display: flex;
         justify-content: center;
         align-items: center;
+        text-align: center;
+        font-size: 18px;
+        background: #fff;
 
         img {
             display: block;
             width: 100%;
             height: 100%;
             object-fit: cover;
-            border-radius: 8px; /* Додає закруглення */
+            border-radius: 8px; // Adds rounded corners
         }
     }
-}
 
+    &-button-prev:after,
+    .swiper-rtl &-button-prev:after {
+        content: '';
+    }
+
+    &-button-next:after,
+    .swiper-rtl &-button-prev:after {
+        content: '';
+    }
+}
 
 @media (max-width: 1024px) {
     .hero__button-group {
