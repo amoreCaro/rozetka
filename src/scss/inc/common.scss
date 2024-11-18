@@ -51,13 +51,12 @@ img:hover {
 }
 
 .section {
-    padding: 16px 0;
+    padding: 40px 0;
     display: flex;
-    justify-content: center; // Центрування блоків по горизонталі
-    align-items: center;    // Центрування блоків по вертикалі (за потреби)
-    flex-direction: column; // Вирівнювання блоків у стовпчик (за потреби)
+    justify-content: center; 
+    align-items: center;    
+    flex-direction: column; 
     width: 100%; 
-    // overflow-x: hidden;
 }
 .container {
     padding: 0px 32px;
@@ -67,12 +66,17 @@ img:hover {
 
 @media (max-width: 1024px) {
     .section {
-       padding: 0px 32px 0px 0px;
+       padding: 16px 0;
+    }
+    .container {
+        padding: 0 24px ;
     }
 }
 
 @media (max-width: 768px) {
     .section {
-       padding: 0px 8px 0px 0px;
+       padding: 8px 0;
     }
+
 }
+
