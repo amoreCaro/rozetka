@@ -1,16 +1,13 @@
 /* Products */
 
+
+
 .products-area {
-    max-width: 1195px;
-    width: 100%;
-    padding-bottom: 40px;
-}
-
-.products__wrapper {
-
     display: flex;
     justify-content: center;
     align-items: center;
+    width: 100%;
+    padding-bottom: 40px;
 }
 
 .products-grid {

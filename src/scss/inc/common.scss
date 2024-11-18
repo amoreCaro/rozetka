@@ -51,12 +51,17 @@ img:hover {
 }
 
 .section {
-    padding: 0 32px ;
-    width: 100%;
-    overflow-x: hidden;
+    padding: 16px 0;
+    display: flex;
+    justify-content: center; // Центрування блоків по горизонталі
+    align-items: center;    // Центрування блоків по вертикалі (за потреби)
+    flex-direction: column; // Вирівнювання блоків у стовпчик (за потреби)
+    width: 100%; 
+    // overflow-x: hidden;
 }
 .container {
-    padding: 16px 0px 0px 40px;
+    padding: 0px 32px;
+    margin: 0 auto;
     max-width: 1440px;
 }
 
