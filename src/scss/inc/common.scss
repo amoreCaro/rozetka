@@ -64,19 +64,25 @@ img:hover {
     max-width: 1440px;
 }
 
+
+
 @media (max-width: 1024px) {
-    .section {
-       padding: 16px 0;
-    }
     .container {
-        padding: 0 24px ;
+        padding: 0 24px !important;
     }
+    .section {
+        padding: 16px 0 !important; 
+     }
 }
 
 @media (max-width: 768px) {
-    .section {
-       padding: 8px 0;
+    .container {
+        padding: 0 16px;
     }
-
 }
 
+@media (max-width: 425px) {
+    .container {
+        padding: 0 8px;
+    }
+}
