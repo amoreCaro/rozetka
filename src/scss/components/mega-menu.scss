@@ -1,6 +1,7 @@
 /* General Mega Menu Styles */
 
 .mega-menu {
+    width: 1440px;
     display: none;
     background-color: #fff;
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
@@ -96,14 +97,35 @@
 }
 
 
-
-.trigger:hover+.hover-block {
+.trigger:hover + .hover-block {
     display: flex;
     flex-direction: row;
-    align-items: center;
+    align-items:flex-end;
     position: absolute;
-    right: calc(100% - 1400px);
-    padding: 10px;
-    top: 80px;
-    width: calc(100% - 300px);
+    left: 10%;
+// transform: translateX(-50%); // Центрування по горизонталі
+//     padding: 10px;
+     top: 70px;
+//     width: 70%; 
+    max-width: 1200px; 
+
 }
+
+
+/* Адаптив для екранів ширших за 1440px */
+@media (min-width: 1440px) {
+    .trigger:hover + .hover-block {
+        width: 1200px; // Фіксована ширина
+        left: 50%;
+        transform: translateX(-50%); // Центрування
+    }
+}
+@mixin mega-menu-columns($columns: 5) {
+    display: grid;
+    grid-template-columns: repeat($columns, 1fr); 
+    gap: 16px;
+    width: 100%;
+    max-width: 1200px; 
+    margin: 0 auto; 
+  }
+  
