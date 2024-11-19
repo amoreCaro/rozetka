@@ -111,3 +111,16 @@
         display: none !important;
     }
 }
+@media (max-width: 375px) {
+    .header__logo-img {
+        width: 35px;
+        height: 35px;
+    }
+    .header__search-input {
+        height: 35px !important;
+    }
+    .btn-icon--cart {
+        width: 20px;
+        height: 20px;
+    }
+}
