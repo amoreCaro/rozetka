@@ -14,7 +14,7 @@
     position: relative;
     justify-content: center;
     &__wrapper {
-        // max-width: 1440px;
+
         display: flex;
         align-items: center;
         width: 100%;
@@ -23,7 +23,7 @@
             margin-right: 8px;
         }
         .header__logo {
-            margin-right: 8px;
+            margin-right: 4px;
             &-img {
                 max-height: 80px;
             }
@@ -60,7 +60,7 @@
         .header__search-icon-container {
             display: flex;
             align-items: center;
-            padding: 4px;
+
         }
         .header__search-input {
             border: none;
