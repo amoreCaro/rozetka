@@ -11,7 +11,7 @@
     padding: 0 10px;
     background-color: $dark-bg;
     width: 100%;
-    position: fixed;
+    // position: fixed;
     justify-content: center;
     &__wrapper {
 
@@ -42,6 +42,7 @@
         .header-search {
             flex-grow: 1;
             margin: 0 0 0 20px;
+           
         }
         .search-form {
             display: flex;
@@ -60,6 +61,7 @@
         .header__search-icon-container {
             display: flex;
             align-items: center;
+            margin-left: 8px;
 
         }
         .header__search-input {
