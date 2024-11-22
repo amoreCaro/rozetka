@@ -14,7 +14,7 @@ modal.style.display = "none";
 
 // Закриваємо модалку при натисканні поза її межами
 window.onclick = function(event) {
-if (event.target === modal) {
-    modal.style.display = "none";
-}
+    if (event.target === modal) {
+        modal.style.display = "none";
+    }
 }
