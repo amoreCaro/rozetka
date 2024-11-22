@@ -25,7 +25,8 @@ html, body {
     align-items: center;
     width: 100%;
     justify-content: space-between;
-    margin-left: 24px;
+    flex-direction: row;
+
 }
 
 .material-symbols-outlined {
@@ -57,10 +58,6 @@ img:hover {
 
 .section {
     padding: 40px 0;
-    display: flex;
-    justify-content: center; 
-    align-items: center;    
-    flex-direction: column; 
     width: 100%; 
 }
 .container {
