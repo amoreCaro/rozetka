@@ -17,7 +17,7 @@
         max-width: 960px;
         width: 100%;
         background-color: $text-color;
-        padding: 20px;
+        padding: 16px;
         text-align: center;
         display: flex;
         flex-direction: column;
@@ -34,6 +34,22 @@
             color: $dark-bg; // Using SCSS variable for title color
         }
 
+    }
+    &__empty {
+        padding: 16px 16px 0;
+        & svg {
+            width: 100%;
+            max-width: 240px;
+            margin-bottom: 48px;
+        }
+    }
+    &__heading {
+        font-size: 24px;
+        margin-bottom: 16px;
+    }
+    &__caption {
+        font-size: 14px;
+        color: $icon-color;
     }
 
     &__close-btn {
