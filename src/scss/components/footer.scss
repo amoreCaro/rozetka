@@ -104,7 +104,8 @@
 }
 @media (max-width: 768px) {
     .footer-stores {
-        display: block;
+        display: flex;
+        flex-direction: column;
     }
     .footer__columns {
         grid-template-columns: repeat(1, 1fr);

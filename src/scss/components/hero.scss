@@ -1,7 +1,7 @@
 .hero {
     position: relative;
-    z-index: -1  !important;
-    overflow: visible;   
+    z-index: 0  !important;
+    overflow: hidden;   
 
     &__btn {
         background-color: $white-bg;
@@ -36,7 +36,7 @@
             width: 100%;
             aspect-ratio: 16 / 5;
             object-fit: cover;
-            border-radius: 8px; // Adds rounded corners
+            border-radius: 8px; 
         }
     }
 
