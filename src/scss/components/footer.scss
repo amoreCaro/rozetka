@@ -60,3 +60,19 @@
         }
     }
 }
+
+.footer__bottom {
+    display: flex;
+    height: 70px;
+}
+
+.footer-payments svg {
+    margin-right: 16px;
+}
+
+.footer-copyright {
+    font-size: 12px;
+    &--gray {
+        color: $icon-color;
+    }
+}
