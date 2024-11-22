@@ -13,6 +13,9 @@
     height: 100%;
     overflow: auto;
     background-color: rgba(0, 0, 0, 0.4);
+    &__link {
+        margin-top: 20px;
+    }
     .inner__modal {
         position: fixed;
         top: 50%;
