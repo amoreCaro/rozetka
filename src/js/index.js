@@ -17,4 +17,6 @@ document.addEventListener("DOMContentLoaded", function() {
     toggleMenuVisibility();
     phoneInput();
     langMenu();
+
+
 });
