@@ -2,6 +2,7 @@
 @import "../inc/vars.scss";
 
 /* Modal Styles */
+
 .modal-overlay {
     display: none; /* За замовчуванням модалка прихована */
     position: fixed;
@@ -50,7 +51,7 @@
             margin-bottom: 20px;
             .modal__title {
                 font-size: 1.5rem;
-                color: $dark-bg; // Using SCSS variable for title color
+                color: $dark-bg; 
             }
             .modal__close-btn {
                 cursor: pointer;
