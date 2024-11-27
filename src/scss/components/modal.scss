@@ -1,93 +1,32 @@
-@import "../inc/helpers.scss";
-@import "../inc/vars.scss";
-
-/* Modal Styles */
-
-.modal-overlay {
-    display: none; /* За замовчуванням модалка прихована */
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: rgba(0, 0, 0, 0.5); /* Прозорий фон */
-    justify-content: center;
-    align-items: center;
-    z-index: 1000; /* Модалка поверх інших елементів */
-}
-
+/* Модальне вікно */
 .modal {
     display: none;
     position: fixed;
-    z-index: 1;
-    left: 0;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    z-index: 1001;
+  }
+  
+  /* Overlay */
+  .overlay {
+    display: none;
+    position: fixed;
     top: 0;
+    left: 0;
     width: 100%;
     height: 100%;
-    overflow: auto;
-    background-color: rgba(0, 0, 0, 0.4);
-    &__link {
-        margin-top: 20px;
-    }
-    &__inner {
-        position: fixed;
-        top: 50%;
-        left: 50%;
-        border-radius: 8px;
-        transform: translate(-50%, -50%);
-        max-width: 440px;
-        width: 100%;
-        background-color: $text-color;
-        padding: 16px;
-        text-align: center;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        .modal__header {
-            display: flex;
-            align-items: center;
-            justify-content: space-between;
-            width: 100%;
-            margin-bottom: 20px;
-            .modal__title {
-                font-size: 1.5rem;
-                color: $dark-bg; 
-            }
-            .modal__close-btn {
-                cursor: pointer;
-                width: 32px;
-                height: 32px;
-                background-color: transparent;
-                border: none;
-            }
-        }
-        .modal__content {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            width: 100%;
-            padding: 0 16px;
-            box-sizing: border-box;
-            margin-top: 20px;
-        }
-        .modal__button {
-            width: 100%;
-            margin: 8px 0;
-            padding: 12px;
-            border: none;
-            border-radius: 6px;
-            cursor: pointer;
-            font-size: 1rem;
-            transition: background-color 0.3s;
-            margin-top: -12px;
-            justify-content: center;
-        }
-        .modal__button-group {
-            display: flex;
-            flex-direction: row;
-            align-items: center;
-            gap: 20px;
-            width: 100%;
-        }
-    }
-}
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 1000;
+  }
+  
+  /* Активні стани модалки та overlay */
+  .modal.active,
+  .overlay.active {
+    display: block;
+  }
+  

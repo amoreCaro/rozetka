@@ -11,6 +11,13 @@
         height: 40px;
         border-radius: 50%;
 
+        &-next {
+            transform: translateX(100%);
+        }
+        &-prev {
+            transform: translateX(-100%);
+        }
+
         svg,
         i {
             width: 20px;
@@ -19,6 +26,7 @@
         }
     }
 }
+
 
 .swiper {
     width: 100%;

@@ -1,7 +1,6 @@
 import hero from './components/hero';
-import openModal from './components/openModal';
-import sidebar from "./components/sidebar";
-
+import modalLogic from './components/modalLogic';
+import sidebarLogic from "./components/sidebarLogic";
 import setupMegaMenu from "./components/setupMegaMenu";
 import toggleMenuVisibility from "./components/toggleMenuVisibility";
 import phoneInput from "./components/phoneInput";
@@ -10,9 +9,9 @@ import langMenu from "./components/langMenu";
 
 document.addEventListener("DOMContentLoaded", function() {
     hero();
-    openModal();
+    modalLogic();
     setupMegaMenu();
-    sidebar();
+    sidebarLogic();
     toggleMenuVisibility();
     phoneInput();
     langMenu();

@@ -8,8 +8,9 @@
     <!-- Link Swiper's CSS -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
 
-
     <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols" rel="stylesheet" />
+
     <link rel="stylesheet" href="css/style.bundle.css" />
 
     <title>Rozetka |
@@ -18,39 +19,38 @@
 </head>
 
 <body>
-    <div class="wrapper">
+    <div class="l-wrapper">
         <header class="header">
-            <div class="header__wrapper container">
-                <div class="header__menu">
-                    <div class="openSidebarBtn icon-bg" data-sidebar="sidebar">
-                        <span class="menu-btn material-symbols-outlined btn h-btn-icon h-btn--default h--white-icon">menu</span>
-                    </div>
-                </div>
-                <a class="header__logo " href="# ">
-                    <img class="header__logo-img " src="../../img/rozetka__logo.svg" alt="Logo " />
-                </a>
-                <button id="openMegaMenu" class="header__button btn h--header-button--catalog">
-                    <span class="material-symbols-outlined  h-button-catalog--icon">grid_view</span>
-              Каталог
-            </button>
+            <div class="header__holder container">
+                    <button class="header__menu btn btn-white btn--icon" data-sidebar-target="#sidebar1">  
+                        <span class="material-symbols-outlined">menu</span>
+                    </button>
+                    <a class="header__logo" href="">
+                        <img class="header__logo-img" src="../../img/rozetka__logo.svg" alt="">
+                    </a>
+                    
+                    <button id="toggleBtnId" class="header__catalog">  
+                        <span class="header__catalog--icon material-symbols-outlined">view_comfy_alt</span>
+                        <p>Каталог</p>
+                    </button>
+                
                 <div class="header-search ">
                     <form class="search-form " action=" ">
-                        <div class="header__search-container ">
-                            <div class="header__search-icon-container ">
-                                <span class="material-symbols-outlined h--gray-icon ">search</span>
+                        <div class="search-form-container ">
+                            <div class="search-form-icon-container ">
+                                <span class="material-symbols-outlined btn-gray ">search</span>
                             </div>
-                            <input class="header__search-input " type="text " placeholder="Я шукаю... " required/>
-                           
-                            <button class="header__search-button btn h-btn--primary h-btn--medium search-form__submit " type="submit ">
-                    Знайти
-                  </button>
+                            <input class="search-form-input" type="text" placeholder="Я шукаю..." required/>
+                            
+                            <button class="header-search-submit-btn search-form-button btn btn-medium btn-primary" type="submit " >
+                                Знайти
+                            </button>
                         </div>
                     </form>
                 </div>
-
-                <div class="header-actions ">
-                    <div class="header-actions__item header-actions__item-language ">
-                        <div class="header__button btn h-btn-dropdown open-lang-menu-btn">
+                <div class="header__actions">
+                    <div class="header-actions__item-language ">
+                        <div class="btn btn-white btn__with-icon h-btn-dropdown open-lang-menu-btn">
                             UA
                             <span class="material-symbols-outlined">keyboard_arrow_down</span>
                         </div>
@@ -71,13 +71,12 @@
                             </ul>
                         </div>
                     </div>
-                    </div>
-                    <div  class="openModalBtn modal-btn header__button btn h-btn-icon h-btn--default btn-icon--account " data-modal="modal-account">
-                        <span class="material-symbols-outlined h--white-icon ">person</span>
-                    </div>
-                    <div  class="openModalBtn header__button btn h-btn-icon h-btn--default btn-icon--cart " data-modal="modal-cart">
-                        <span class="material-symbols-outlined h--white-icon ">shopping_cart</span>
-                    </div>
+                    <button class="header__actions__item-account openModalBtn btn btn-white btn--icon" data-modal-target="#modal1">
+                        <span class="material-symbols-outlined ">person</span>
+                    </button> 
+                    <button class="openModalBtn btn btn-white btn--icon"data-modal-target="#modal2">
+                        <span class="material-symbols-outlined">shopping_cart</span>
+                    </button>
                 </div>
             </div>
         </header>

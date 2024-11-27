@@ -1,4 +1,4 @@
-document.addEventListener("DOMContentLoaded", () => {
+export default function langMenu() {
     const toggleBtn = document.querySelector('.open-lang-menu-btn');
     const langMenuContainer = document.querySelector('.lang-menu-container');
     const buttons = document.querySelectorAll(".lang-menu__item");
@@ -46,4 +46,4 @@ document.addEventListener("DOMContentLoaded", () => {
     function updateToggleButtonText(lang) {
         toggleBtn.childNodes[0].textContent = lang + " ";
     }
-});
+}
