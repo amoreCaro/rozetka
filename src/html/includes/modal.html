@@ -1,8 +1,8 @@
 <!-- Модалки -->
-<div id="modal1" class="modal">
+<div id="modal-account" class="modal">
       <div class="modal__header ">
       <h2 class="modal__title ">Вхід</h2>
-      <button class="closeModalBtn">
+      <button class="closeModalBtn btn">
         <span class="material-symbols-outlined">close</span>
       </button>
       </div>
@@ -13,38 +13,39 @@
               <input id="phone" class="phone-input__field" maxlength="12" type="text" placeholder="Ваш номер" />
           </div>
 
-          <button class=" modal__button btn h-btn--primary h-btn--medium ">
+          <button class="modal-account-primary-btn btn btn-primary ">
         Продовжити
       </button>
           <div class="divider ">
               <span class="divider__text ">або</span>
           </div>
 
-          <div class="modal__button-group">
-              <button class="btn modal__button h-btn--medium h-btn--gray h-btn--with--icon">
-          <img
-            class="modal__button-icon "
-            src="./img/google-logo.png "
-            width="24px "
-            height="24px "
-            alt="Google "
-          />
-          Google
-        </button>
-              <button class="btn  modal__button h-btn--medium h-btn--gray h-btn--with--icon">
-          <img
-            class="modal__button-icon "
-            src="img/apple-logo.png "
-            width="24px "
-            height="24px "
-            alt="Apple "
-          />
-          Apple
-        </button>
+          <div class="modal-account__social-group ">
+              <button class="modal-account__social-button btn btn-modal btn-gray btn__with-icon">
+                <img
+                  class="modal__button-icon "
+                  src="./img/google-logo.png "
+                  width="24px "
+                  height="24px "
+                  alt="Google "
+                />
+                Google
+              </button>
+              <button class="modal-account__social-button btn btn-modal btn-gray btn__with-icon">
+                <img
+                  class="modal__button-icon "
+                  src="img/apple-logo.png "
+                  width="24px "
+                  height="24px "
+                  alt="Apple "
+                />
+                Apple
+              </button>
           </div>
-
-          <a class="h-btn--link modal__link modal__link--facebook " href=" ">Увійти через Facebook</a>
-          <a class="h-btn--link modal__link modal__link--email " href=" ">Увійти через пошту</a>
+          <div class="modal__link-wrapper">
+            <a class="modal__link h-btn--link modal__link--facebook " href=" ">Увійти через Facebook</a>
+            <a class="modal__link h-btn--link  modal__link--email " href=" ">Увійти через пошту</a>
+          </div>
       </div>
 
   </div>

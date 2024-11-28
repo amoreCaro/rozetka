@@ -22,17 +22,22 @@
     <div class="l-wrapper">
         <header class="header">
             <div class="header__holder container">
+                <div class="header__menu-wrapper">
                     <button class="header__menu btn btn-white btn--icon" data-sidebar-target="#sidebar1">  
                         <span class="material-symbols-outlined">menu</span>
                     </button>
+                </div>
+                <div class="header__logo-wrapper">
                     <a class="header__logo" href="">
                         <img class="header__logo-img" src="../../img/rozetka__logo.svg" alt="">
                     </a>
-                    
-                    <button id="toggleBtnId" class="header__catalog">  
+                </div>
+                    <div class="header__catalog-wrapper">
+                    <button class="header__catalog">  
                         <span class="header__catalog--icon material-symbols-outlined">view_comfy_alt</span>
                         <p>Каталог</p>
                     </button>
+                </div>
                 
                 <div class="header-search ">
                     <form class="search-form " action=" ">
@@ -71,7 +76,7 @@
                             </ul>
                         </div>
                     </div>
-                    <button class="header__actions__item-account openModalBtn btn btn-white btn--icon" data-modal-target="#modal1">
+                    <button class="header__actions__item-account openModalBtn btn btn-white btn--icon" data-modal-target="#modal-account">
                         <span class="material-symbols-outlined ">person</span>
                     </button> 
                     <button class="openModalBtn btn btn-white btn--icon"data-modal-target="#modal2">
