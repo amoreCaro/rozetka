@@ -4,7 +4,6 @@
     justify-content: center;
     align-items: center;
     width: 100%;
-    padding-bottom: 40px;
 }
 
 .products--col-6 {
@@ -40,7 +39,7 @@
         height: 100%;  
         &-wrapper {
             height: 120px;
-            width: 200px;
+            max-width: 200px;
         }
     }
 
@@ -90,7 +89,7 @@
         object-fit: contain;         
         object-position: center;  
         &-wrapper {
-            width: 200px;
+            max-width: 200px;
             height: 160px;
         }
     }
