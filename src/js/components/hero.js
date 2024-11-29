@@ -1,6 +1,5 @@
 export default function Hero() {
     return new Swiper(".hero__slider", {
-
         spaceBetween: 70,
         autoplay: {
         delay: 2500,
