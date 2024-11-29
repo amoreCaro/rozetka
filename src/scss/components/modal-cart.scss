@@ -19,6 +19,21 @@
         }
     }
 }
-.cart__slide {
-    width: 300px;
-}
+
+
+.modal-slider .modal-slider__slide {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .modal-card img {
+    width: 160px;
+    height: 160px;
+    // margin-bottom: 10px;
+  }
+  
+  .modal-card p {
+    font-size: 14px;
+    text-align: center;
+  }
