@@ -21,10 +21,11 @@
     top: 0;
     left: 0;
     z-index: 1001;
-    background: $white-bg;
+    background: #fff;
 
     &__inner {
         margin: 20px;
+
     }
 
     &__header {
@@ -35,6 +36,27 @@
         flex-shrink: 0;
         padding: 8px;
         background-color: $dark-bg;
+    }
+    &__actions {
+        margin-right: 12px;
+        display: flex;
+        gap: 16px;
+    }
+    &__close-btn {
+        color: white;
+        width: 16px;
+        height: 16px;
+    }
+    &__button-catalog {
+        display: flex;
+        align-items: center;
+        border-radius: 8px ;
+        width: 100%;
+        justify-content: center !important;
+        padding: 12px !important;
+        & span {
+            margin-right: 8px;
+        }
     }
 
     &__menu {
@@ -92,13 +114,6 @@
     height: 50px;
 }
 
-.h-sidebar__button {
-    width: 100%;
-    display: flex;
-    justify-content: flex-start;
-    padding: 12px;
-    box-sizing: border-box;
-}
 
 /* User Login */
 .user-login {
@@ -108,13 +123,25 @@
     justify-content: center;
     padding: 16px;
     text-align: center;
-    background-color: $white-bg;
+    background-color: $white-bg !important;
     border-radius: 8px;
+    &-wrapper  {
+        margin: 12px 0px;
+    }
 
     &__caption {
         margin-bottom: 16px;
         font-size: 12px;
         color: $dark-bg;
+    }
+    .user-login__button {
+        background-color: $link-color;
+        color: #fff;
+        padding: 8px 12px;
+        border-radius: 8px;
+        &:hover {
+            background-color: $link-color-hover;
+        }
     }
 }
 
