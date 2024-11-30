@@ -21,9 +21,9 @@
 <body>
     <div class="l-wrapper">
         <header class="header section">
-            <div class="header__holder container">
+            <div class="header__wrapper container">
                 <div class="header__menu-wrapper">
-                    <button class="header__menu openSidebarBtn btn btn-white btn--icon" data-sidebar-target="#sidebar1"> 
+                    <button class="header__menu openSidebarBtn btn" data-sidebar-target="#sidebar1"> 
                         <span class="material-symbols-outlined">menu</span>
                     </button>
                 </div>
@@ -34,20 +34,20 @@
                 </div>
                     <div class="header__catalog-wrapper">
                     <button class="header__catalog">  
-                        <span class="header__catalog--icon material-symbols-outlined">view_comfy_alt</span>
+                        <span class=" material-symbols-outlined">view_comfy_alt</span>
                         <p>Каталог</p>
                     </button>
                 </div>
                 
                 <div class="header__search ">
-                    <form class="header__search-form " action=" ">
-                        <div class="header__search-form-container ">
-                            <div class="header__search-form-icon-container ">
+                    <form class="header__search-form " action="">
+                        <div class="header__search-wrapper">
+                            <div class="header__search-form-icon ">
                                 <span class="header__search-icon material-symbols-outlined">search</span>
                             </div>
-                            <input class="header__search-form-input" type="text" placeholder="Я шукаю..." required/>
+                            <input class="header__search-form-input" type="text" placeholder="Я шукаю..." name="search-input" required/>
                             
-                            <button class="header-search-submit-btn search-form-button btn btn-medium btn-primary" type="submit " >
+                            <button class="header__search-submit-btn btn" type="submit " >
                                 Знайти
                             </button>
                         </div>
@@ -76,10 +76,13 @@
                             </ul>
                         </div>
                     </div>
-                    <button class="header__actions__item-account openModalBtn btn btn-white btn--icon" data-modal-target="#modal-account">
-                        <span class="material-symbols-outlined ">person</span>
-                    </button> 
-                    <button class="openModalBtn btn btn-white btn--icon"data-modal-target="#modal-cart">
+                    <div class="header__actions__item-wrapper">
+                        <button class="header__actions__item openModalBtn btn" data-modal-target="#modal-account">
+                            <span class="material-symbols-outlined ">person</span>
+                        </button> 
+                    </div>
+                    <div class="header__actions__item-wrapper">
+                    <button class="header__actions__item openModalBtn btn"data-modal-target="#modal-cart">
                         <span class="material-symbols-outlined">shopping_cart</span>
                     </button>
                 </div>
