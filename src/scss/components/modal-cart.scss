@@ -8,19 +8,18 @@
     align-items: center;
     justify-content: center;
     text-align: center;
-    // height: 100vh;
     &-img  {
-        min-height: 240px; /* Adjust as needed */
-        // height: 1;
-
+        min-height: 240px;
         & svg {
-            max-width: 100%; /* Робить SVG адаптивним */
+            max-width: 100%; 
             max-height: 100%; 
         }
     }
 }
 
-
+.modal-slider {
+    padding-top: 40px;
+}
 .modal-slider .modal-slider__slide {
     display: flex;
     flex-direction: column;
@@ -30,7 +29,6 @@
   .modal-card img {
     width: 160px;
     height: 160px;
-    // margin-bottom: 10px;
   }
   
   .modal-card p {
