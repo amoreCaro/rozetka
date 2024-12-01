@@ -18,7 +18,6 @@ html, body {
     display: flex;
     flex-direction: column;
     align-content: center;
-    // min-height: 100dvh;
 }
 
 .h-between {
@@ -62,18 +61,12 @@ img:hover {
     width: 100%; 
 }
 .container {
-    padding: 0 32px;
     margin: 0 auto;
     max-width: 1440px;
 }
 
 @media (max-width: 1024px) {
-    .container {
-        padding: 0 16px !important;
-    }
-    .section {
-        padding: 16px 0 !important; 
-     }
+
 }
 
 @media (max-width: 768px) {
