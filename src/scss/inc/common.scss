@@ -26,7 +26,9 @@ html, body {
     width: 100%;
     justify-content: space-between;
     flex-direction: row;
-
+}
+button {
+    cursor: pointer;
 }
 
 .material-symbols-outlined {
@@ -45,17 +47,6 @@ img:hover {
     border: 1px solid darkred;
 }
 
-.center {
-    display: flex;
-    justify-content: center;
-    align-items: center
-}
-
-.center-text {
-    display: block;
-    text-align: center;
-}
-
 .section {
     padding: 40px 0;
     width: 100%; 
@@ -70,7 +61,6 @@ img:hover {
         padding: 16px;
         max-width: 1440px;
     }
-    
 }
 
 @media (max-width: 768px) {

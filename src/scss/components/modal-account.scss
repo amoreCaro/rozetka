@@ -1,10 +1,6 @@
 .modal-account {
     width: 440px;
     text-align: center; 
-
-    &-content {
-
-    }
     &__social-group {
         width: 100%;
         display: flex;
@@ -15,14 +11,25 @@
     &-primary-btn {
         width: 100%;
         padding: 12px 16px !important;
-        border: 8px !important;
+        border-radius: 8px !important;
+        background-color: $accent-color;
+        color: #fff;
+        &:hover {
+            background-color: $accent-hover-color;
+            transition: .5s ease-in-out;
+        }
     }
     &__social-button  {
         width: 100%;
-       justify-content: center;
-       align-items: center;
-       background-color: $white-bg;
-
+        justify-content: center;
+        align-items: center;
+        background-color: $white-bg;
+        padding: 12px 16px;
+        border-radius: 4px;
+        background-color: $white-bg;
+        color: $link-color;
+        display: flex;
+        align-items: center;
     }
     &__link {
         width: 100%;
@@ -30,6 +37,8 @@
         display: flex;
         justify-content: center;
         align-items: center;
+        text-decoration: none;
+        color: $link-color;
         &-wrapper {
             margin-top: 16px;
             display: flex;

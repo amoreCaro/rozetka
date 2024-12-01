@@ -47,6 +47,10 @@
         width: 100%;
         justify-content: center !important;
         padding: 12px !important;
+        &:hover {
+            background-color: $accent-hover-color;
+            transition: background-color 0.3s;
+        }
         & span {
             margin-right: 8px;
         }
@@ -60,11 +64,6 @@
 
     &__item {
         margin-bottom: 15px;
-
-        &--label {
-            font-size: 14px;
-            color: $icon-color;
-        }
 
         .sidebar__item-icon {
             margin-right: 8px;
