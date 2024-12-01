@@ -1,6 +1,5 @@
 .footer {
     &__stores {
-        // padding: 16px;
         // background-color: $accent-color;
         // height: 75px;
         &-wrapper {
@@ -76,6 +75,10 @@
     }
 
     &-1__link {
+        display: flex;
+        align-items: center;
+        text-decoration: none;
+        color: $link-color;
         margin-bottom: 12px;
        &:hover { 
         transition: .5s all ease-in-out;
