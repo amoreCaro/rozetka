@@ -151,6 +151,11 @@
 }
 
 @media (max-width: 768px) {
+    .header__search-form-input {
+        padding: 20px;
+        border-radius: 8px;
+    }
+    .header__search-form-icon,
     .header-actions__item-language,
     .header__actions__item--account,
     .header__search-submit-btn {

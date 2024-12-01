@@ -68,7 +68,7 @@
         color: $icon-color;
     }
 
-    &-1__link {
+    &__link {
         display: flex;
         align-items: center;
         text-decoration: none;
@@ -130,12 +130,12 @@
         grid-template-columns: repeat(3, 1fr);
         gap: 16px;
     }
-    .footer__column-1 {
-        grid-row-start: 1;
-        grid-row-end: 3;
-        grid-column-start: 1;
-        grid-column-end: 2;
-    }
+    // .footer__column-1 {
+    //     grid-row-start: 1;
+    //     grid-row-end: 3;
+    //     grid-column-start: 1;
+    //     grid-column-end: 2;
+    // }
 }
 @media (max-width: 768px) {
     .footer__stores__title {
@@ -154,7 +154,7 @@
     .footer__columns {
         grid-template-columns: repeat(1, 1fr);
     }
-    .footer__column-1 {
+    .footer__column {
         width: 100%; 
         margin: 0 auto; 
         text-align: center;
