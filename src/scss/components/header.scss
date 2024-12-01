@@ -23,6 +23,7 @@
     }
 
     &__menu {
+        background: none;
         width: 100%;
         color: #fff;
         
@@ -111,6 +112,7 @@
         width: 160px;
         
         &__item{
+            background: none;
             display: flex;
             color: #fff;
             &-wrapper {
