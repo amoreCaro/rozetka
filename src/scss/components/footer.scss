@@ -138,11 +138,19 @@
     }
 }
 @media (max-width: 768px) {
+    .footer__stores__title {
+        font-size: 16px;
+    }
 
-    .footer-stores {
+    .footer__stores-wrapper,
+    .footer__bottom-wrapper {
         display: flex;
         flex-direction: column;
+        display: flex;
+        flex-direction: column;
+        gap: 16px;
     }
+   
     .footer__columns {
         grid-template-columns: repeat(1, 1fr);
     }
@@ -155,16 +163,15 @@
             justify-content: center;
         }
     }
-    .footer__bottom {
-        flex-direction: column;
-        align-items: flex-start;
-        
-     }
      .footer-payments {
          display: flex;
+     }
+     .footer-copyright {
+        text-align: center;
      }
      .social__list {
         justify-content: center; 
         align-items: center;
      }
+
 }
