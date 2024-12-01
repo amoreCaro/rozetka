@@ -65,8 +65,12 @@ img:hover {
     max-width: 1440px;
 }
 
-@media (max-width: 1024px) {
-
+@media (max-width: 1440px) {
+    .container {
+        padding: 32px;
+        max-width: 1440px;
+    }
+    
 }
 
 @media (max-width: 768px) {
