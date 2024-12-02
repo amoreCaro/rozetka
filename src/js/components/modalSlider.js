@@ -7,8 +7,11 @@ export default function modalSlider() {
       prevEl: '.swiper-button-prev',
     },
     breakpoints: {
-      640: {
+      320: {
         slidesPerView: 1,
+      },
+      620: {
+        slidesPerView: 2,
       },
       768: {
         slidesPerView: 3,
