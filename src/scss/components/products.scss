@@ -126,13 +126,11 @@
 @media (max-width: 1024px) {
     .products--col-6 {
         grid-template-columns: repeat(4, 1fr);
-        padding: 0 16px;
     }
 }
 
 @media (max-width: 768px) {
     .products--col-6 {
         grid-template-columns: repeat(2, 1fr);
-        padding: 0 16px;
     }
 }
