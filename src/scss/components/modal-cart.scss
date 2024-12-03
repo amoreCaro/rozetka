@@ -1,7 +1,5 @@
 #modal-cart {
     max-width: 960px;
-    // max-height: 500px;
-    // overflow: auto;
 }
 
 .modal-cart__empty {
@@ -46,8 +44,7 @@
   
 @media (max-width: 1024px) {
     #modal-cart {
-        max-width: 90%; /* заміняє фіксоване значення на відсоткове */
-        max-height: 500px;
+        max-width: 90%; 
         overflow: auto;
     }
 }
