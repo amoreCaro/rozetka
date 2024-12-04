@@ -1,132 +1,126 @@
-/* General Mega Menu Styles */
+// /* General Mega Menu Styles */
 
-.mega-menu {
-    width: 1440px;
-    display: none;
-    background-color: #fff;
-    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
-    font-family: Arial, sans-serif;
-    height: 50vh;
-    z-index: 100;
-    &__inner {
-        display: flex;
-    }
-    &__column__categories {
-        list-style: none;
-        padding: 0;
-        margin: 0;
-        display: flex;
-        flex-direction: column;
-        .mega-menu__link {
-            line-height: 32px;
-            display: flex;
-            align-items: center;
-            justify-content: flex-start;
-            text-decoration: none;
-            color: #333;
-            position: relative;
-            width: 100%;
-            &:hover {
-                color: $accent-hover-color;
-            }
-            &:focus {
-                color: $accent-hover-color;
-            }
-            &.mega-menu__content {
-                display: flex;
-                align-items: center;
-                justify-content: flex-start;
-            }
-            .mega-menu__icon {
-                margin-right: 8px;
-            }
-            .mega-menu__arrow {
-                margin-left: auto;
-            }
-        }
-    }
-    &__column {
-        padding: 10px;
-        &__hidden {
-            gap: 10px;
-        }
-        &-title {
-            font-size: 16px;
-            font-weight: bold;
-            margin-bottom: 10px;
-        }
-        &-list {
-            list-style: none;
-            padding: 0;
-            margin: 0;
-            li {
-                margin-bottom: 8px;
-            }
-            a {
-                font-size: 13px;
-                line-height: 15px;
-                color: #4b4b4b;
-                text-decoration: none;
-                &:hover {
-                    text-decoration: underline;
-                    color: $accent-color;
-                }
-            }
-        }
-    }
-    &__hidden {
-        padding: 20px;
-        transition: display 0.3s ease;
-        .mega-menu__column {
-            flex: 1;
-            padding: 10px;
-        }
-    }
-}
+// .mega-menu {
+//     width: 1440px;
+//     display: none;
+//     background-color: #fff;
+//     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+//     font-family: Arial, sans-serif;
+//     height: 50vh;
 
-.hover-block {
-    display: none;
-}
+//     &__inner {
+//         display: flex;
+//     }
+//     &__column__categories {
+//         list-style: none;
+//         padding: 0;
+//         margin: 0;
+//         display: flex;
+//         flex-direction: column;
+//         .mega-menu__link {
+//             line-height: 32px;
+//             display: flex;
+//             align-items: center;
+//             justify-content: flex-start;
+//             text-decoration: none;
+//             color: #333;
+//             position: relative;
+//             width: 100%;
+//             &:hover {
+//                 color: $accent-hover-color;
+//             }
+//             &:focus {
+//                 color: $accent-hover-color;
+//             }
+//             &.mega-menu__content {
+//                 display: flex;
+//                 align-items: center;
+//                 justify-content: flex-start;
+//             }
+//             .mega-menu__icon {
+//                 margin-right: 8px;
+//             }
+//             .mega-menu__arrow {
+//                 margin-left: auto;
+//             }
+//         }
+//     }
+//     &__column {
+//         padding: 10px;
+//         &__hidden {
+//             gap: 10px;
+//         }
+//         &-title {
+//             font-size: 16px;
+//             font-weight: bold;
+//             margin-bottom: 10px;
+//         }
+//         &-list {
+//             list-style: none;
+//             padding: 0;
+//             margin: 0;
+//             li {
+//                 margin-bottom: 8px;
+//             }
+//             a {
+//                 font-size: 13px;
+//                 line-height: 15px;
+//                 color: #4b4b4b;
+//                 text-decoration: none;
+//                 &:hover {
+//                     text-decoration: underline;
+//                     color: $accent-color;
+//                 }
+//             }
+//         }
+//     }
+//     &__hidden {
+//         padding: 20px;
+//         transition: display 0.3s ease;
+//         .mega-menu__column {
+//             flex: 1;
+//             padding: 10px;
+//         }
+//     }
+// }
 
-.mega-menu__hidden {
-    color: $icon-color;
-    font-size: 16px;
-    line-height: 18px;
-    &:hover {
-        color: $accent-color;
-    }
-}
+// .hover-block {
+//     display: none;
+// }
 
+// .mega-menu__hidden {
+//     color: $icon-color;
+//     font-size: 16px;
+//     line-height: 18px;
+//     &:hover {
+//         color: $accent-color;
+//     }
+// }
 
-.trigger:hover + .hover-block {
-    display: flex;
-    flex-direction: row;
-    align-items:flex-end;
-    position: absolute;
-    left: 10%;
-// transform: translateX(-50%); // Центрування по горизонталі
-//     padding: 10px;
-     top: 70px;
-//     width: 70%; 
-    max-width: 1200px; 
+// .trigger:hover + .hover-block {
+//     display: flex;
+//     flex-direction: row;
+//     align-items:flex-end;
+//     position: absolute;
+//     left: 10%;
+//     top: 70px;
+//     max-width: 1200px; 
 
-}
+// }
 
-
-/* Адаптив для екранів ширших за 1440px */
-@media (min-width: 1440px) {
-    .trigger:hover + .hover-block {
-        width: 1200px; // Фіксована ширина
-        left: 50%;
-        transform: translateX(-50%); // Центрування
-    }
-}
-@mixin mega-menu-columns($columns: 5) {
-    display: grid;
-    grid-template-columns: repeat($columns, 1fr); 
-    gap: 16px;
-    width: 100%;
-    max-width: 1200px; 
-    margin: 0 auto; 
-  }
+// @media (min-width: 1440px) {
+//     .trigger:hover + .hover-block {
+//         width: 1200px; 
+//         left: 50%;
+//         transform: translateX(-50%); 
+//     }
+// }
+// @mixin mega-menu-columns($columns: 5) {
+//     display: grid;
+//     grid-template-columns: repeat($columns, 1fr); 
+//     gap: 16px;
+//     width: 100%;
+//     max-width: 1200px; 
+//     margin: 0 auto; 
+//   }
   

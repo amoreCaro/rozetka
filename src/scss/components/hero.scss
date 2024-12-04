@@ -4,11 +4,11 @@
     overflow: hidden;   
     margin-top: 100px;
     &__slide img {
-            display: block;
-            width: 100%;
-            aspect-ratio: 16 / 5;
-            object-fit: cover;
-            border-radius: 8px; 
+        display: block;
+        width: 100%;
+        aspect-ratio: 16 / 5;
+        object-fit: cover;
+        border-radius: 8px; 
     }
 
     &__btn {

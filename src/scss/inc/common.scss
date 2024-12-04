@@ -47,6 +47,27 @@ img:hover {
     border: 1px solid darkred;
 }
 
+.divider {
+    display: flex;
+    align-items: center;
+    text-align: center;
+    width: 100%;
+    margin: 28px 0px;
+  }
+  
+  .divider::before, .divider::after {
+    content: '';
+    flex-grow: 1;
+    border-top: 1px solid $icon-color; /* Товщина та колір лінії */
+    margin: 0 12px; /* Відступи з обох боків тексту */
+  }
+  
+  .divider__text {
+    font-size: 16px; /* Розмір тексту */
+    color: $icon-color; /* Колір тексту */
+    white-space: nowrap; /* Забезпечує, що текст не переноситься */
+  }
+
 .section {
     padding: 40px 0;
     width: 100%; 

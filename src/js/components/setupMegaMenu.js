@@ -13,7 +13,6 @@ export default function setupMegaMenu(menuId, toggleBtnId) {
     } else {
         console.warn(`Toggle button with ID "${toggleBtnId}" not found.`);
     }
-
 }
 
 

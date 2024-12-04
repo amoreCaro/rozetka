@@ -1,5 +1,5 @@
 export default function modalSlider() {
-  return new Swiper('.modal-slider', {
+  return new Swiper('.modal-cart__slider', {
     loop: true,
     slidesPerView: 4, 
     navigation: {

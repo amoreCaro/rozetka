@@ -3,7 +3,7 @@ import modalLogic from './components/modalLogic';
 import modalSlider from './components/modalSlider';
 import sidebarLogic from "./components/sidebarLogic";
 import setupMegaMenu from "./components/setupMegaMenu";
-import toggleMenuVisibility from "./components/toggleMenuVisibility";
+// import toggleMenuVisibility from "./components/toggleMenuVisibility";
 import phoneInput from "./components/phoneInput";
 import langMenu from "./components/langMenu";
 
@@ -14,7 +14,7 @@ document.addEventListener("DOMContentLoaded", function() {
     modalSlider();
     setupMegaMenu();
     sidebarLogic();
-    toggleMenuVisibility();
+    // toggleMenuVisibility();
     phoneInput();
     langMenu();
 });
